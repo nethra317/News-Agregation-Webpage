@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Wellness & Lifestyle - Destiny Communication</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fcfcf9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #008080;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 30px;
+      color: #20b2aa;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    li::before {
+      content: "🍃";
+      position: absolute;
+      left: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #008080;
+      color: white;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #006666;
+    }
+
+    .highlight-box {
+      margin-top: 30px;
+      background: #e6fffa;
+      padding: 20px;
+      border-left: 5px solid #008080;
+      border-radius: 8px;
+    }
+
+    .video-section {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 340px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Wellness & Lifestyle</h1>
+    <p>
+      Our lifestyle and wellness programs aim to promote balanced living, self-care, and mental clarity through engaging activities and meaningful conversations.
+    </p>
+
+    <div class="highlight-box">
+      <strong>💚 What Makes It Unique?</strong>
+      <p>
+        Focus on mindfulness, healthy habits, fitness, and inspirational talks. Weekly sessions with experts ensure continuous wellness growth.
+      </p>
+    </div>
+
+    <h2>Activities You’ll Enjoy</h2>
+    <ul>
+      <li>Yoga & Meditation Sessions</li>
+      <li>Inspirational Guest Talks</li>
+      <li>Healthy Living Challenges</li>
+      <li>Group Discussions on Mental Health</li>
+      <li>Art, Music & Creative Expression</li>
+    </ul>
+
+    <div class="video-section">
+      <h2>Watch: Lifestyle in Motion</h2>
+      <iframe src="https://www.youtube.com/embed/JVycTt8kZLY" title="Lifestyle Journey"></iframe>
+    </div>
+
+    <a href="index.html" class="btn">← Back to Home</a>
+  </div>
+
+  <script>
+    document.querySelector(".btn").addEventListener("click", () => {
+      alert("Returning to homepage...");
+    });
+
+    console.log("Wellness & Lifestyle Page Loaded Successfully!");
+  </script>
+</body>
+
+</html>

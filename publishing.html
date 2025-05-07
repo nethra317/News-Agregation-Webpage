@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Media & Publishing - Destiny Communication</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f4f6;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #8b0000;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 30px;
+      color: #b22222;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    li::before {
+      content: "📰";
+      position: absolute;
+      left: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #8b0000;
+      color: white;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #600000;
+    }
+
+    .highlight-box {
+      margin-top: 30px;
+      background: #fff5f5;
+      padding: 20px;
+      border-left: 5px solid #8b0000;
+      border-radius: 8px;
+    }
+
+    .video-section {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 340px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Media & Publishing</h1>
+    <p>
+      Explore your voice in writing, publishing, and journalism through Destiny Communication's Publishing Wing.
+      Share your thoughts, opinions, and creativity with a larger audience.
+    </p>
+
+    <div class="highlight-box">
+      <strong>📚 Our Focus Areas:</strong>
+      <p>
+        Our publishing platform supports articles, stories, interviews, and research insights across various themes and issues.
+        Collaborate with editors and media mentors to sharpen your publication skills.
+      </p>
+    </div>
+
+    <h2>What You Can Do</h2>
+    <ul>
+      <li>Write articles and editorials for our magazine</li>
+      <li>Participate in youth-focused publishing workshops</li>
+      <li>Learn design, layout, and print publishing basics</li>
+      <li>Contribute to newsletters and bulletins</li>
+      <li>Understand ethics in media and journalism</li>
+    </ul>
+
+    <div class="video-section">
+      <h2>Watch: Publishing in Action</h2>
+      <iframe src="https://www.youtube.com/embed/YjUY4U4XO0w" title="Youth Publishing Experience"></iframe>
+    </div>
+
+    <a href="index.html" class="btn">← Back to Home</a>
+  </div>
+
+  <script>
+    document.querySelector(".btn").addEventListener("click", () => {
+      alert("Taking you back to the homepage...");
+    });
+
+    console.log("Media & Publishing Page Loaded Successfully!");
+  </script>
+</body>
+
+</html>

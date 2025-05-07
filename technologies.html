@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>-Technologies - Destiny Communication</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #dbeeff, #ffffff);
+      z-index: -1;
+    }
+
+    .container {
+      position: relative;
+      max-width: 600px;
+      margin: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: white;
+      padding: 50px 40px;
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .btn button {
+      padding: 12px 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.4s ease;
+      box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+    }
+
+    .btn button:hover {
+      background: linear-gradient(135deg, #0056b3, #003f7f);
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(-50%);
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      .btn button {
+        width: 100%;
+        padding: 12px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Particle background -->
+  <div id="particles-js"></div>
+
+  <!-- Main content -->
+  <div class="container">
+    <h1>Welcome to Destiny Communication Technologies</h1>
+    <p>We connect people and ideas through innovative technology. Discover more and join us on our journey.</p>
+    <a href="index.html" class="btn">
+      <button>Go back to home</button>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione maxime nesciunt rerum dolores, delectus numquam fugit asperiores expedita, aperiam ipsum ad explicabo pariatur recusandae. Temporibus, sapiente! Vero, dolorem culpa soluta illum autem debitis hic quam! Dicta, alias expedita tenetur repellendus sequi repudiandae maxime vitae, velit neque obcaecati fugiat possimus tempore perferendis amet excepturi fuga ipsam iste ea? Maxime, molestias nostrum, at voluptatibus expedita ex tempora corporis nemo aliquid mollitia magni deserunt ratione natus saepe voluptas quas reiciendis maiores dolorum excepturi dolore in! Sit amet sequi illo vero animi velit provident esse, quae voluptatibus. Nobis optio quam rerum minima accusamus. Possimus.</p>
+    </a>
+  </div>
+
+  <!-- Particles.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60, density: { enable: true, value_area: 800 } },
+        color: { value: "#007bff" },
+        shape: {
+          type: "circle",
+          stroke: { width: 0, color: "#000000" },
+        },
+        opacity: {
+          value: 0.5,
+          random: true,
+        },
+        size: {
+          value: 5,
+          random: true,
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          out_mode: "out",
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" },
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 },
+        },
+      },
+      retina_detect: true,
+    });
+  </script>
+</body>
+
+</html>
